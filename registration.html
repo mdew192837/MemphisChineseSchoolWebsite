@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<title>Registration</title>
+	</head>
+<body>
+	<div class="container" align="center">
+		<form accept-charset="UTF-8" method="post" action="registration.php" id="login" class="form-horizontal">
+			<legend style="font-size:36px" class="col-md-12">Register</legend>
+			<div class="form-group" style="font-size: 12px">
+				<div class="row">
+					<label class="control-label col-md-1 col-sm-1 col-xs-5 col-md-offset-5 col-sm-offset-5 col-xs-offset-3" style="font-size:14px"><span style="color: red;">*</span>&nbsp-&nbspRequired&nbspField</label>
+					<input class="form-control" value="1" id="submitted" name="submitted" type="hidden" /> 
+				</div>
+			</div>
+			<br/>	
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-xs-offset-3 col-sm-offset-3">
+						<label class="control-label" for="myusername">Username<span style="color: red;">&nbsp*</span></label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control col-md-2" maxlength="50" id="myusername" name="myusername" type="text"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="mypassword">Password<span style="color: red;">&nbsp*</span></label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control col-md-2" maxlength="50" id="mypassword" name="mypassword" type="password"/>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-3 col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
+						<strong><span>Father / Legal Guardian</span></strong>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="font-size:12px">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="f_firstname">First Name</label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control" maxlength="30" id="f_firstname" name="f_firstname" type="text"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="font-size:12px">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="f_lastname">Last Name</label>
+					</div>
+					<div class="col-md-2  col-sm-3 col-xs-3">
+						<input class="form-control" maxlength="30" id="f_lastname" name="f_lastname" type="text"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="font-size:12px">
+				<div class="row" >
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="email">Email<span style="color: red;">&nbsp*</span></label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control" maxlength="50" id="email" name="email" type="text"/>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-3 col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
+						<strong><span>Mother / Legal Guardian</span></strong>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="font-size:12px">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="m_firstname">First Name</label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control" maxlength="30" id="m_firstname" name="m_firstname" type="text"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="font-size:12px">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="m_lastname">Last Name</label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control" maxlength="30" id="m_lastname" name="m_lastname" type="text"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-group" style="font-size:12px">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="email2">Email<span style="color: red;">&nbsp*</span></label>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-3">
+						<input class="form-control" maxlength="50" id="email2" name="email2" type="text"/>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-3 col-md-offset-5 col-sm-offset-5 col-xs-offset-5">
+						<i><span>Additional Information</span></i>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="address1">Address</label>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<input class="form-control" maxlength="50" id="address1" name="address1" type="text" size="70" />
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="city">City</label>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<input maxlength="50" id="city" name="city" type="text" class="form-control"/>
+					</div>
+					<div class="col-md-1 col-sm-1 col-xs-1">
+						<label class="control-label" for="state">State</label>
+					</div>
+					<div class="col-md-1 col-sm-2 col-xs-2">
+						<select class="form-control" name="state" id="state">
+							<option>AR</option>
+							<option>MS</option>
+							<option selected="selected">TN</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-2 col-md-offset-4 col-sm-offset-3 col-xs-offset-3">
+						<label class="control-label" for="phone">Phone<span style="color: red;">&nbsp*</span></label>
+					</div>
+					<div class="col-md-2 col-xs-4">
+						<input class="form-control" maxlength="15" id="phone" name="phone" type="text" placeholder="e.g. (901)-123-4567"/>
+					</div>
+				</div>
+			</div>
+			<br/>
+			<div class="form-group">
+				<input class="btn btn-success" value="Register" name="Submit" type="submit"/>
+				<a href="login.html"><button type="button" class="btn btn-default">Log In</button></a>
+				<a href="forgotpassword.html"><button type="button" class="btn btn-default">Retrieve Password</button></a>
+			</div>
+		</form>
+		<hr/>
+	</div>
+</body>
+</html>
